@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+    <div>
+        hello
+    </div>
+    <div>
+        hello2
+    </div>
+
+    <div id='checkoutThankYou' name='ckjfwe'>
+            <h2> FDHFDSJH </h2>
+            <!-- START: ffjhggjk -->
+            <h2 name='h1-name' id="my id">Your invoice #APB-30495</h2>
+        </div>
+
+
+<script >
+function getRadarParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+function radarFn(){
+var urkK = getRadarParameterByName('k');
+
+var mainContainerDiv = document.getElementById('checkoutThankYou');
+ var bRadar = mainContainerDiv.children[1].innerHTML;
+ 
+console.log("Invoice Number= ", bRadar.split(' '));
+console.log("Thank You = ", urkK);
+
+var imageRadar = document.createElement("img");
+imageRadar.src ="https://insight.adsrvr.org/track/conv/?adv=bg9fx7m&ct=0:0gqzef4&fmt=3&orderid="+bRadar.split(' ')[2] +'-'+urkK ;
+imageRadar.height = "0";
+imageRadar.width = "0";
+imageRadar.style="display:none;visibility:hidden";
+var bodyRadar = document.getElementsByTagName('body')[0];
+bodyRadar.insertBefore(imageRadar, bodyRadar.childNodes[0]);
+}
+window.addEventListener('load', radarFn, false );
+
+</script>
+
+        
+    </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "development": {
+    "dialect": "postgres",
+    "username": "adserver_dev",
+    "password": "sm0rgasb0rd",
+    "database": "adserver_db_dev",
+    "host": "adserver-db-dev.cy0ghploatrr.us-west-2.rds.amazonaws.com",
+    "logging": false
+  },
+  "test": {
+    "dialect": "postgres",
+    "username": "adserver_dev",
+    "password": "sm0rgasb0rd",
+    "database": "adserver_db_test",
+    "host": "adserver-db-dev.cy0ghploatrr.us-west-2.rds.amazonaws.com",
+    "logging": false
+  },
+  "production": {
+    "username": "adserver_master",
+    "password": "s)A5^Z1$)QhESt#q",
+    "database": "adserver_db",
+    "host": "adserver-db.c39logbtfzjv.us-west-2.rds.amazonaws.com",
+    "dialect": "postgres"
+  }
+}

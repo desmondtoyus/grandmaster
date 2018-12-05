@@ -1,0 +1,44 @@
+{
+  "default": [
+    "shell:eslintSrc",
+    "shell:eslintES5",
+    "shell:eslintNode",
+    "shell:browserify",
+    "replace:debugOff",
+    "replace:sourceHeader",
+    "concat",
+    "shell:stylelint",
+    "less",
+    "shell:uglify",
+    "replace:debugOn",
+    "replace:module",
+    "shell:jsbeautify",
+    "shell:eslintModule",
+    "compress"
+  ],
+  "build": [
+    "shell:eslintSrc",
+    "shell:eslintES5",
+    "shell:eslintNode",
+    "shell:browserify",
+    "replace:debugOff",
+    "replace:sourceHeader",
+    "concat",
+    "shell:stylelint",
+    "less",
+    "shell:uglify",
+    "replace:debugOn",
+    "replace:module",
+    "shell:jsbeautify",
+    "shell:eslintModule"
+  ],
+  "test": [
+    "shell:test"
+  ],
+  "testAndroid": [
+    "shell:testAndroid"
+  ],
+  "testSafari": [
+    "shell:testSafari"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "video_converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.15",
+    "express": "^4.16.3",
+    "ffmpeg": "^0.0.4",
+    "ffprobe": "^1.1.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs": "^0.0.1-security",
+    "html5-media-converter": "^0.0.2",
+    "make-web-videos": "^2.0.3",
+    "path": "^0.12.7",
+    "process-streams": "^1.0.1",
+    "q": "^1.5.1",
+    "q-io": "^1.13.6",
+    "request": "^2.88.0",
+    "sm-manage-files": "^1.3.7",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.bwaserver.com:bluewaterads/Video_Converter.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

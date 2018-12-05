@@ -1,0 +1,129 @@
+        @keyframes fade-in-up {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+.in_article{
+    height: 0px;
+    overflow: hidden !important;
+}
+.in_article_fixed{
+    height: 0px;
+    overflow: hidden !important;
+}
+
+
+.pilot-video:hover .pilot-closeBtn{
+  visibility: visible !important;
+}
+
+.pilot-video:hover .ima-mute-div {
+   visibility: visible !important;
+}
+
+.pilot-video:hover .ima-play-pause-div{
+   visibility: visible !important;
+}
+       .in_article.stuck {
+            position: fixed !important;
+            bottom: 0px;
+            left: 0px;
+            transform: translateY(100%);
+            animation: fade-in-up 0.25s ease forwards;
+             z-index: 3;
+        }
+
+.ima-seek-bar-div
+{
+display: none !important;
+ }
+.ima-mute-div
+{
+left: 30px;
+ }
+
+ .logostyle
+ {
+position: absolute;
+right: 5px;
+width: 50px;
+height: 24px;
+bottom: 0px;
+z-index: 1;
+ }
+ .ima-slider-div,
+ .ima-fullscreen-div, 
+ .ima-non-fullscreen{
+     width: 0px;
+     max-width: 0px;
+     min-width: 0px;
+ }
+
+.pilot-video.slider {
+  position: fixed !important;	
+  right:-150px;
+  display: none; 
+  bottom:0px !important;
+   z-index: 3 !important;
+}
+
+.pilot-video{
+    visibility: hidden !important;
+    text-align: left  !important;
+}
+.pilot-player{
+    visibility: hidden;
+}
+.pilot-closeBtn{
+display : inline-block;
+padding: 2px;
+cursor: pointer;
+visibility: hidden;
+position: relative;
+left:0%  !important;
+text-align: left  !important;
+}
+
+.ima-countdown-div{
+text-align: center  !important;
+margin-top: 10px !important;
+margin-left: 60% !important;
+font-size: 14px;
+}
+
+.ima-countdown-div::first-letter {
+  font-size: 0 !important;
+}
+
+.vjs-default-skin .vjs-progress-control,
+.vjs-default-skin .vjs-time-controls,
+.vjs-default-skin .vjs-time-divider,
+.vjs-default-skin .vjs-captions-button,
+.vjs-default-skin .vjs-mute-control,
+.vjs-default-skin .vjs-volume-control,
+.vjs-default-skin .vjs-fullscreen-control {
+    display: none !important;
+}
+
+.video-js .vjs-big-play-button {
+    left: 50% !important;
+    top: 50% !important;
+    width: 10%;
+    height: 10%;
+       border: none !important; 
+       color:red;
+       align-content: center;
+      box-shadow: none !important; 
+	  /* background-color: rgba(7, 20, 30, 0.7); */
+}
+
+.video-js .vjs-play-control:before {
+    top:40% !important;
+    content: '\f101';
+    font-size: 48px;
+}

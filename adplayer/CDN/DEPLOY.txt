@@ -1,0 +1,51 @@
+Armada Services Upload
+master
+branch = des_dev
+upload my changes to origin master ==
+================================================
+After upload, from /c/Users/desmo access the git lab using
+ssh -i frontend.pem ubuntu@frontend-dev.bwaserver.com
+cd /var/deploy
+
+https://github.com/MailOnline/videojs-vast-vpaid
+https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/
+
+===========================================================
+cd /var/deploy/armada_ui
+git pull origin master
+npm run prod
+cd ../armada_services
+git pull origin master
+pm2 restart anthem
+========================================================
+DEPLOY TO PRODUCTION
+=================================
+desmo@DESKTOP-2F83J6F MINGW64 ~
+$ ssh -i sample-pair.pem ubuntu@jumpbox.anthemx.tv
+=====================================================
+ubuntu@ip-10-0-2-18:~$ ls
+aws-scripts-mon  bwacdn.pem  bwa-devops.pem  CloudWatchMonitoringScripts-1.2.1.zip  current_db_schema  current_deploy_scripts  ohio-test-1.pem  query_results.csv
+=================================================================
+ubuntu@ip-10-0-2-18:~$ ssh -i bwa-devops.pem ubuntu@frontend-staging.anthemx.tv
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1044-aws x86_64)
+==================================================================================
+ubuntu@ip-10-0-2-56:~$ cd /var/deploy
+ubuntu@ip-10-0-2-56:/var/deploy$ ls
+armada_services  armada_ui  config.json  index.html
+ubuntu@ip-10-0-2-56:/var/deploy$
+================ UPLOAD CDN================================
+$ scp -i ~sample-pair.pem C:/Users/desmo/code/BACKUP/videoplayer/Jan18/Pilot-Player/pilot-video-player.min.js ubuntu@jumpbox.anthemx.tv:/home/ubuntu/
+=====================================================================
+http://player.pilotxcdn.com/player.js
+==========DEPLOY CDN==========================================================
+from the jumpbox:
+
+scp -i bwacdn.pem pilot-player4.min.css ec2-user@cdn.anthemx.tv:/var/www/html/assets/cdn/player/player.css
+
+scp -i bwacdn.pem pilot-player4.min.js ec2-user@cdn.anthemx.tv:/var/www/html/assets/cdn/player/player.js
+========================CLOUD FARE====================================================================
+admin@bluewaterads.com
+vM%zWqHGV@k4yqj
+=================================================================================================================
+
+scp -i ~sample-pair.pem C:/Users/desmo/Desktop/player/CDN/pilot-playerx.min.css ubuntu@jumpbox.anthemx.tv:/home/ubuntu/

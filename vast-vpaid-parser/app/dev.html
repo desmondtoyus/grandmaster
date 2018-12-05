@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- this page is used for development purposes refer to index.html for the full demo app -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>RmpVast - Example</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="../css/rmp-vast.css">
+  <script src="../js/dist/rmp-vast.js"></script>
+</head>
+
+<body>
+  <div class="rmp-container" id="rmpPlayer">
+    <div class="rmp-content">
+      <video class="rmp-video" src="https://www.rmp-streaming.com/media/bbb-360p.mp4" playsinline muted>
+      </video>
+    </div>
+  </div>
+  <script>
+    var id = 'rmpPlayer';
+    var container = document.getElementById(id);
+    var video = container.getElementsByClassName('rmp-video')[0];
+    var ADTAG2 = 'https://www.radiantmediaplayer.com/vast/tags/non-linear.xml';
+    //var ADTAG2 = 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=';
+    /*var params = {
+      outstream: true,
+      ajaxTimeout: 10000,
+    };*/
+    var rmpVast = new RmpVast(id/*, params*/);
+    rmpVast.loadAds(ADTAG2);
+  </script>
+</body>

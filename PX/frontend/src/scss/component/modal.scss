@@ -1,0 +1,34 @@
+.Select-placeholder-err {
+    color: #cb3636;
+}
+.modal-xl {
+  max-width: 900px !important;
+  
+}
+
+@media (min-width: 620px) {
+  .modal-dialog {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .modal-xl {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 920px) {
+  .modal-xl {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+// .modal-dialog{
+// background-image: url(../img/logo/bg-pattern.svg), radial-gradient(farthest-side ellipse at 10% 0,#eaf6ff  20%, #94a3b1) !important;
+//  background-attachment: fixed, fixed !important;
+// }
+
+.nav-holder {
+    border-color: transparent;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 11px;
+}

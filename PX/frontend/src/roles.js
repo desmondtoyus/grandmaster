@@ -1,0 +1,10 @@
+export const ROLE_SUPERADMIN = 1;
+export const ROLE_OPSADMIN = 2;
+export const ROLE_OPSMEDIA = 4; //Deprecated
+export const ROLE_OPSPOLICY = 8;
+export const ROLE_ZONEADMIN = 16;
+export const ROLE_ZONEOPS = 32;
+export const ROLE_ACCOUNTADMIN = 64;
+export const ROLE_ACCOUNTOPS = 128;
+export const ROLE_ACCOUNTMANAGED = 512;
+export const ROLE_ADVERTISERMANAGED = 1024;

@@ -1,0 +1,28 @@
+@import 'settings/variable';  
+@import './vendor';
+@import './base/typography'; 
+@import 'generic/box-sizing.scss';
+@import './component/dropdown';  
+@import './base/scaffolding';                
+@import 'component/alert';               
+@import 'component/btn';                    
+@import './component/card';             
+@import './component/carousel';                       
+@import './component/collapse';             
+@import './component/form';                                        
+@import './component/modal';          
+@import './component/pagination';       
+@import './component/panel';         
+@import './component/progress-bar'; 
+@import './component/sidebar';          
+@import './component/slider';           
+@import './component/table';            
+@import './component/tabs';               
+@import './component/toggle-btn';      
+@import './component/topbar';           
+@import './component/load';
+ @import 'pages/account';                      
+@import 'pages/dashboard';            
+@import 'pages/documentation';
+@import 'objects/layout.scss';     
+

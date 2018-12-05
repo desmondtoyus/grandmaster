@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+    <div>
+        hello
+    </div>
+    <div>
+        hello2
+    </div>
+
+
+<script >
+var myNode = document.getElementById("globalFooter");
+while (myNode.firstChild) {
+    myNode.removeChild(myNode.firstChild);
+}
+var script = document.createElement("noscript");
+var niframe = document.createElement("iframe");
+niframe.src ="https://www.googletagmanager.com/ns.html?id=GTM-TSLGSJB";
+niframe.height = "0";
+niframe.width = "0";
+niframe.style="display:none;visibility:hidden";
+script.appendChild(niframe);
+var body = document.getElementsByTagName('body')[0];
+body.insertBefore(script, body.childNodes[0]);
+</script>
+
+
+    
+        
+    </body>
+</html>

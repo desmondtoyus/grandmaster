@@ -1,0 +1,9 @@
+exports.SUPER_ADMIN = 1;
+exports.OPS_ADMIN = 2;
+exports.OPS_POLICY = 8;
+exports.ZONE_ADMIN = 16;
+exports.ZONE_OPS = 32;
+exports.ACCOUNT_ADMIN = 64;
+exports.ACCOUNT_OPS = 128;
+exports.ACCOUNT_MANAGED = 512;
+exports.ADVERTISER_MANAGED = 1024;
